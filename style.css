@@ -1,0 +1,43 @@
+/* Write your CSS below. Try to make it responsive (i.e. no horizontal scroll) */
+
+nav {
+    display: inline-block;
+}
+body {
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+   
+}
+.list {
+    list-style-type: none;
+    
+}
+.cat,.cart,.book,.contact {
+    display: inline-block;
+    margin: 8px;
+}
+button {
+    color: white;
+    background-color: #f2849e;
+    border: none;
+    padding: 10px 16px;
+}
+button:hover {
+    background-color: #ec4b75;
+}
+#main {
+    display: flex;
+    flex-direction:row;
+}
+.img {
+    border-right: 3px solid grey;
+    border-left: 3px solid grey;
+    margin: 12px;
+    
+}
+#detail,#product,#about {
+    border-bottom: 2px solid #efefef;
+}
+}
+
+
