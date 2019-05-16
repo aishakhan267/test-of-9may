@@ -1,43 +1,148 @@
 /* Write your CSS below. Try to make it responsive (i.e. no horizontal scroll) */
 
-nav {
-    display: inline-block;
+* {
+    box-sizing: border-box;
 }
+
 body {
-    background-color: white;
     font-family: 'Source Sans Pro', sans-serif;
-   
+    margin: 0;
 }
-.list {
-    list-style-type: none;
-    
-}
-.cat,.cart,.book,.contact {
-    display: inline-block;
-    margin: 8px;
-}
-button {
-    color: white;
-    background-color: #f2849e;
-    border: none;
-    padding: 10px 16px;
-}
-button:hover {
-    background-color: #ec4b75;
-}
-#main {
+
+header {
+    padding: 10px;
     display: flex;
-    flex-direction:row;
+    justify-content: space-between;
+    background-color: white;
+    height: 90px;
 }
-.img {
-    border-right: 3px solid grey;
-    border-left: 3px solid grey;
-    margin: 12px;
+
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+.burger{
+    display: none;
+}
+
+header nav {
+    display: flex;
+}
+#logo{
+    width:60px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 15px;
+}
+
+main {
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    background: #ffffff;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px 200px; */
+}
+
+#main-pic {
+    height: 300px;
+}
+
+#mon {
+    border-right: 6px solid #cccccc;
+    border-left: 6px solid #cccccc;
+}
+
+#copy {
+    display: flex;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    border-bottom: 2px solid #cccccc;
+    padding-bottom:10px; 
+}
+#r-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+
+}
+div#rate {
+    border-bottom: 2px solid #cccccc;
+}
+
+div#rate #book {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    ;
+}
+
+div#rate #admin {
+    color: #000;
+    margin-top: 10px;
+}
+
+.sameer {
+    color: #f7b733;
+    margin: 20px 0;
+}
+
+div#price-1 {
     
-}
-#detail,#product,#about {
-    border-bottom: 2px solid #efefef;
-}
+    border-bottom: 2px solid #cccccc;
 }
 
+div#price-1 #discount {
+    font-size: 15px;
+    font-weight: 900;
+    color: #000;
+    margin-top: 10px;
+    ;
+}
 
+div#price-1 #price {
+    color: #b6341a;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-left: 90px;
+}
+
+button {
+    color: #fff;
+    background-color: #f2849f;
+    font-size: 15px;
+    font-weight: bold;
+    border: transparent;
+    padding: 10px 40px;
+    margin: 15px 0px;
+}
+
+button:hover {
+    background-color: #ed4b74;
+    cursor: pointer;
+}
+@media (max-width:600px){
+    header ul{
+        display: none;
+    }
+    .burger{
+        display: inline-block;
+    }
+    #main {
+        padding: 0px 0px;
+    }
+}
